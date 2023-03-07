@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Estilos para el encabezado y la imagen de perfil */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+header {
+  background-color: #333;
   color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: sans-serif,"roboto";
 }
 
-.App-link {
-  color: #61dafb;
+.profile-image {
+  display: inline-block;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile-image:hover img {
+  transform: scale(1.2);
+}
+
+.profile-image img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Estilos para las pestañas de navegación */
+nav {
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Cambia el color de fondo de la pestaña activa */
+li a.active {
+  background-color: #4CAF50;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+/* Estilos para el contenido */
+.content {
+  padding: 20px;
+  font-size: 18px;
 }

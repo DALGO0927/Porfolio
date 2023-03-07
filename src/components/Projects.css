@@ -1,0 +1,66 @@
+.projects {
+  background-color: #05010f;
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.project-card {
+  background-color: #310633ce;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  color: #440747ce;
+}
+
+.project-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.project-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.project-card a {
+  display: block;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color:blue;
+  transition: color 0.3s ease-in-out;
+  
+}
+

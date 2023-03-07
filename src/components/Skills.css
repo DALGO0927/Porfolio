@@ -1,0 +1,54 @@
+.skills {
+  padding: 60px 0;
+  text-align: center;
+  font-family: sans-serif;
+  background-color:#1d081d ;
+}
+
+.skills h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.skill-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.5s ease;
+  overflow: hidden;
+}
+
+.skill:hover {
+  transform: rotateY(180deg);
+}
+
+.skill-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.skill-icon i {
+  font-size: 60px;
+}
+
+.skill p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
